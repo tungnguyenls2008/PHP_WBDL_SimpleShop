@@ -17,11 +17,12 @@
 
 
 Route::get('/', 'ProductsController@index');
- 
+Route::get('/{id}/ProductDetails', 'ProductsController@showOneProduct')->name('details');
+
 Route::get('cart', 'ProductsController@cart');
- 
+
 Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 
 Route::patch('update-cart', 'ProductsController@update');
- 
+
 Route::delete('remove-from-cart', 'ProductsController@remove');
