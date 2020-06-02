@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-6"> <a href="{{ url('add-to-cart/'.$product->id) }}" class="btn btn-primary shop-button">Add to Cart</a>
-                                    <div class="product_fav"><i class="fas fa-heart"></i></div>
+                                    <a href="{{ url('/') }}" class="btn btn-warning shop-button">Back to Product List</a>
                                 </div>
                             </div>
                         </div>
